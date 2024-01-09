@@ -1,0 +1,129 @@
+/* Home.css */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }#intro{
+    width: 100%;
+    height: 627px;
+    background-color: turquoise;
+}
+
+
+  .mym, .qae {
+  font-size: 30px; /* Set desired font size */
+  margin: 0; 
+}
+#introtext{
+    padding-top: 231px;
+    padding-left: 50px;
+    text-align: left;
+}
+#scos{
+  width: 100%;
+  height: 600px;
+  background-color: brown;
+}
+.text{
+  padding-top: 100px;
+}
+.cmy{
+  font-size: 30px; /* Set desired font size */
+  margin: 0;
+  text-align: left;
+  padding-left: 100px;
+}
+/* services */
+#services{
+  width: 100%;
+  background-color: aliceblue;
+}
+
+#shead{
+  margin-bottom: 35px;
+  font-size: 70px;
+  padding-top: 50px;
+}
+
+.service-cards{
+  display: grid;
+  grid-template-columns: auto auto ;
+  place-items: center;
+}
+
+.service-ccard {
+   display: flex; 
+   margin-bottom: 40px;
+  flex-direction: column;
+
+  /* margin: 50px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px; 
+
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.service-ccard img {
+  width: 100%; /* Image width to fill the ccard */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.service-details {
+  padding: 10px; /* Padding for service details */
+  height: 100px; /* Set a fixed height for the ccard body */
+  display: flex;
+  flex-direction: column;
+}
+
+.service-details h3 {
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  font-size: 14px;
+  margin: 0;
+}
+
+#shift{
+  background: #ff6b6b;
+  height: 493px;
+  /* display: grid;
+  grid-template-columns: auto auto auto auto;  */
+   /* Horizontally center the items */
+  margin-top: 20px;
+}
+.shift-items{
+  color: yellow;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 93px;
+  padding-left: 135px;
+  
+}
+.shift-item{
+  background-color: black;
+  height: auto;
+  width: 200px;
+  align-items: center;
+}
+.ccard-img {
+  width: 100%; /* Adjust the width to fill the ccard */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Set maximum height as needed */
+  object-fit: cover; /* Resize image to cover its container */
+}
+#shift h1{
+  padding-top:30px ;
+}
+#book{
+  display: grid;
+  grid-template-columns: auto auto ;
+  background-color: blue;
+  height: 550px;
+}
+
