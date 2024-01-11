@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Header from '../Header/Header'
-import Footer from '..//Footer'
+import Footer from '../Footer/Footer'
 import './Home.css'
 import image1 from '../Images/1.png';
 import image2 from '../Images/2.jpg';
@@ -110,12 +110,40 @@ const Home = () => {
 
           </div>
           <div className='books-labels'>
-          
+            <div className=''>
+              <input type="number"placeholder='Moving from' class="grid-item " />
+              <input type="number"placeholder='Moving to' class="grid-item " />
+            </div>
+
+            <div>
+              <input type="text" placeholder='FirstName'class="grid-item " />
+              <input type="text" placeholder='LastName' class="grid-item " />
+            </div>
+            
+            <div>
+              <input type="date" placeholder='Moving-Date' class="grid-item "/>
+              <input type="number" placeholder='Phone Number' class="grid-item " />
+            </div>
+
+            <div>
+               <input type="text"placeholder='Description ' class="grid-item des " id="description" colspan="2"/>
+            </div>
+            <div>
+              <input type="button" class="grid-item es" value="Submit"/>
+            </div>
+
+
           </div>
+        </div>
+        <div id='location'>
+          <div className='loc'>
+            <h1>Location</h1>
+          </div>
+          <div className='loc-pic'> </div>
         </div>
 
       </div>
-      {/* <Footer /> */}
+      <Footer /> 
       
     </div>
   )

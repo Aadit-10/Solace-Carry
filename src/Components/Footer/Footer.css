@@ -1,0 +1,6 @@
+#footer{
+    height: 350px;
+    background-color: white;
+    display: grid;
+    grid-template-columns:auto auto auto auto ;
+}
