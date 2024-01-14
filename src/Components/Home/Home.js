@@ -5,10 +5,10 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import './Home.css'
 import image1 from '../Images/1.png';
+import ScrollingText from '../ScrollingText/ScrollingText';
+import {Parallax,ParallaxLayer} from '@react-spring/parallax'
+
 import image2 from '../Images/2.jpg';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
 
 
 const Home = () => {
@@ -17,10 +17,13 @@ const Home = () => {
         <Header />
       <div id='Home'>
         {/* <h1>Dragon</h1> */}
+        
+        
         <div id='intro'>
           <div id='introtext' >
-          <p className='mym'> Making your move </p>
-          <p className='qae'>Quick and Easy</p> 
+          {/* <p className='mym'> Making your move </p>
+          <p className='qae'>Quick and Easy</p>  */}
+          <ScrollingText />
           </div>
         </div>
         <div id='scos'>
