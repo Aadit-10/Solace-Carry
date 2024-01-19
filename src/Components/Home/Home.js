@@ -1,17 +1,30 @@
 //Home.js
 
-import React from 'react'
+import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
+
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import './Home.css'
 import image1 from '../Images/1.png';
-import ScrollingText from '../ScrollingText/ScrollingText';
-import {Parallax,ParallaxLayer} from '@react-spring/parallax'
+import bag from '../Images/bag.png'
+import almarah from '../Images/almarah.png'
+import bed from '../Images/bed.png'
+import chair from '../Images/chair.png'
+import fullbox from '../Images/full box.png'
+import boxout from '../Images/box out.png'
 
-import image2 from '../Images/2.jpg';
+
+
+import ScrollingText from '../ScrollingText/ScrollingText';
+// import {Parallax,ParallaxLayer} from '@react-spring/parallax'
+// import { Parallax } from 'react-parallax';
+// import image2 from '../Images/2.jpg';
+ 
 
 
 const Home = () => {
+  
   return (
     <div>
         <Header />
@@ -20,18 +33,32 @@ const Home = () => {
         
         
         <div id='intro'>
-          <div id='introtext' >
-          {/* <p className='mym'> Making your move </p>
-          <p className='qae'>Quick and Easy</p>  */}
-          <ScrollingText />
-          </div>
-        </div>
+            <div id='introtext'>
+              <div className='bag'>
+              <img src={bag} alt='BAG'  className='bag'/>
+              </div>
+              <div className='bag'>
+              <img src={chair} alt='BAG'  className='chair'/>
+              </div>
+              <div className='bag'>
+              <img src={almarah} alt='BAG'  className='almarah'/>
+              </div>
+              <div className='bag'>
+              <img src={bed} alt='BAG'  className='bed'/>
+              </div>
+              <ScrollingText />
+              <div className='box'>
+                <img src={boxout} alt="" className='boxout '/>
+                <img src={fullbox} alt="" className='fullbox '/>
+              </div>
+            </div>
+           </div>
         <div id='scos'>
-          <div className='text'>
-          <p className='cmy'>The Company</p>
-          <p className='cmy'>makes it easy</p>
-          </div>
-        </div>
+              <div className='text'>
+                <p className='cmy'>The Company</p>
+                <p className='cmy'>makes it easy</p>
+              </div>
+            </div>
         <div id='services'>
           <b><p id='shead'>Our Services</p></b>
           <div className='service-cards'>
@@ -113,28 +140,29 @@ const Home = () => {
 
           </div>
           <div className='books-labels'>
+          {/* <form ref={form} onSubmit={sendEmail}>  */}
             <div className=''>
-              <input type="number"placeholder='Moving from' class="grid-item " />
-              <input type="number"placeholder='Moving to' class="grid-item " />
+              <input type="text"placeholder='Moving from*' class="grid-item  required" />
+              <input type="text"placeholder='Moving to*' class="grid-item " />
             </div>
 
             <div>
-              <input type="text" placeholder='FirstName'class="grid-item " />
-              <input type="text" placeholder='LastName' class="grid-item " />
+              <input type="text" placeholder='Full Name*'class="grid-item " />
+              <input type="email" placeholder='Email*' class="grid-item " />
             </div>
             
             <div>
-              <input type="date" placeholder='Moving-Date' class="grid-item "/>
-              <input type="number" placeholder='Phone Number' class="grid-item " />
+              <input type="date" placeholder='Moving-Date*' class="grid-item "/>
+              <input type="number" placeholder='Phone Number*' class="grid-item " />
             </div>
 
             <div>
-               <input type="text"placeholder='Description ' class="grid-item des " id="description" colspan="2"/>
+               <input type="text"placeholder='Description' class="grid-item des " id="description" colspan="2"/>
             </div>
             <div>
               <input type="button" class="grid-item es" value="Submit"/>
             </div>
-
+          {/* </form> */}
 
           </div>
         </div>

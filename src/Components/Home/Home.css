@@ -9,11 +9,59 @@
 
 #intro{
   width: 100%;
-  height: 100vh;
+  height: 250vh;
+  position: relative;
   background-color: #FFA800;
   background-image:  url('../Images/texturebg.png');;
 }
 
+.bag{
+  position: absolute;
+  top: -35px;
+  right: 350px;
+  width: 417px;
+  height: 417px;
+  z-index: 10;
+
+}
+.chair{
+  position: absolute;
+  top: 86px;
+  right: 750px;
+  width: 417px;
+  height: 417px;
+  z-index: 10;
+
+}
+.bed{
+  position: absolute;
+  top: 144px;
+  right: 100px;
+  z-index: 10;
+
+}
+.almarah{
+  position: absolute;
+  top: -50px;
+  right: px;
+  left: 300px;
+  z-index: 10;
+
+}
+.boxout{
+  position: absolute;
+  z-index: 20;
+  top: 645px;
+
+}
+.fullbox{
+  position: absolute;
+  z-index: 10;
+}
+.box{
+  position: absolute;
+  top: 500px;
+}
 
 .mym, .qae {
 font-size: 30px; /* Set desired font size */
