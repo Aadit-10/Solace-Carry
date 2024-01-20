@@ -1,6 +1,7 @@
+// ScrollingChair.js
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import chair from '../Images/chair.png'
+import chair from '../Images/chair.png';
 
 const ScrollingChairContainer = styled.div`
   position: absolute;
@@ -8,8 +9,15 @@ const ScrollingChairContainer = styled.div`
   right: 1150px;
   width: 417px;
   height: 417px;
-  z-index: 10; 
+  z-index: 10;
 
+  @media (max-width: 768px) {
+    /* Adjust the positioning for smaller screens */
+    top: 200px;
+    left:-20px;
+    height:300px;
+    width:300px;
+  }
 `;
 
 const ScrollingChair = () => {

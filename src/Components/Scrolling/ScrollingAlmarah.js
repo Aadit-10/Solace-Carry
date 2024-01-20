@@ -1,3 +1,4 @@
+// ScrollingAlmarah.js
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import almarah from '../Images/almarah.png'

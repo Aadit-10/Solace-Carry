@@ -1,12 +1,30 @@
+/* Contact.css */
+
 .grid-item {
-    padding: 10px;
-    border: px solid #ccc;
-    width: 169px;
-    height: 55px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 169px;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Set border-radius for curved edges */
+}
+
+.des {
+  width: 100%;
+  max-width: 349px;
+  height: 88px;
+  border-radius: 8px; /* Set border-radius for curved edges */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .grid-item {
+    max-width: none;
     margin-right: 15px;
-    
-    }
-    .des{
-      width: 349px;
-      height: 88px;
-    }
+    width: calc(50% - 10px);
+  }
+
+  .des {
+    max-width: none;
+  }
+}

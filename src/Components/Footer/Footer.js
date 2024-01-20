@@ -1,35 +1,39 @@
-// Footer.js
 import React from 'react';
-import './Footer.css'; // Create a corresponding CSS file for styling if needed
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer>
-      <section className="top">
-        <img src="logo.svg" alt="Logo" />
-        <div className="links">
-          <div className="links-column">
-            <h2>Portfolio</h2>
-            <a>About</a>
-            {/* more links */}
-          </div>
-          {/* another links column */}
-          <div className="links-column socials-column">
-            <h2>Social Media</h2>
-            <p>Follow me on social media to</p>
-            <div className="socials">
-              <a className="fa-brands fa-instagram"></a>
-              {/* more social links */}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="bottom">
-        <p className="copyright">© 2024 ...</p>
-        <div className="legal">
-          {/* legal links */}
-        </div>
-      </section>
+    <footer className="bg-dark text-light py-4">
+      <Container>
+        <Row>
+          {/* Company Section */}
+          <Col md={4} className="mb-4">
+            <h5 className="mb-3">Company</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida dolor sit amet lacus accumsan, eu commodo mauris vestibulum.
+            </p>
+          </Col>
+
+          {/* Contact Section */}
+          <Col md={4} className="mb-4">
+            <h5 className="mb-3">Contact Us</h5>
+            <address>
+              <p>Phone: +1 123-456-7890</p>
+              <p>Email: info@example.com</p>
+            </address>
+          </Col>
+
+          {/* Locations Section */}
+          <Col md={4} className="mb-4">
+            <h5 className="mb-3">Locations</h5>
+            <ul className="list-unstyled">
+              <li>New York</li>
+              <li>Los Angeles</li>
+              <li>London</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </footer>
   );
 };

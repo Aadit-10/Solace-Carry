@@ -1,14 +1,21 @@
+// ScrollingBag.js
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import bag from '../Images/bag.png'
+import bag from '../Images/bag.png';
 
 const ScrollingBagContainer = styled.div`
   position: absolute;
   top: -100px;
   left: 300px;
-  z-index: 10; 
+  z-index: 10;
   width: 100px;
   height: 200px;
+
+  @media (max-width: 768px) {
+    /* Adjust the positioning for smaller screens */
+    top: -50px;
+    left: 50px;
+  }
 `;
 
 const ScrollingBag = () => {

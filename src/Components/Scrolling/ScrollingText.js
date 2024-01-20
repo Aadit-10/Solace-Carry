@@ -4,13 +4,20 @@ import styled from 'styled-components';
 const ScrollingTextContainer = styled.div`
   position: fixed;
   top: 55%;
-  right: -120%; /* Fix: Add 'px' to the value */
+  right: -120%;
   white-space: nowrap;
-  color: black ;
+  color: black;
   font-size: 250px;
   font-family: 'Notable', sans-serif;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    /* Adjust the positioning for smaller screens */
+    right: -60%;
+    font-size: 120px;
+  }
 `;
+
 
 const ScrollingText = () => {
   const containerRef = useRef(null);

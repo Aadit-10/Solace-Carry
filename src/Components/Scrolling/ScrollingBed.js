@@ -9,9 +9,12 @@ const ScrollingBedContainer = styled.div`
   width: 417px;
   height: 417px;
   z-index: 10;
-  
-`;
 
+  @media (max-width: 768px) {
+    /* Adjust the positioning for smaller screens */
+    right: 100px;
+  }
+`;
 const ScrollingBed = () => {
   const containerRef = useRef(null);
 
