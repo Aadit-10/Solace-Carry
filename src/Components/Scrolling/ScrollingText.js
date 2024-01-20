@@ -6,7 +6,7 @@ const ScrollingTextContainer = styled.div`
   top: 55%;
   right: -120%; /* Fix: Add 'px' to the value */
   white-space: nowrap;
-  color: #fff;
+  color: black ;
   font-size: 250px;
   font-family: 'Notable', sans-serif;
   overflow: hidden;

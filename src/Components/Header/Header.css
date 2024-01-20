@@ -16,9 +16,9 @@
 }
 
 
-.logo{
-  margin-right: 950px;
-}
+/* .logo{
+  margin-right: 
+} */
 header {
   background-color: rgba(0, 0, 0, 0.86);
   color: #fff;
@@ -30,10 +30,11 @@ header {
   align-items: center;
   font-family: 'SF Pro', sans-serif;
   display: flex;
+  
 }
 
 .profile-icon {
-  width: 50px; /* Set the desired width */
+  width: px; /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
 }
 

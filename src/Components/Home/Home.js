@@ -1,29 +1,42 @@
 //Home.js
 
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
+ import emailjs from '@emailjs/browser';
 
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import ContactUs from '../Email/Contact';
 import './Home.css'
 import image1 from '../Images/1.png';
-import bag from '../Images/bag.png'
-import almarah from '../Images/almarah.png'
-import bed from '../Images/bed.png'
-import chair from '../Images/chair.png'
+
 import fullbox from '../Images/full box.png'
 import boxout from '../Images/box out.png'
 
 
 
-import ScrollingText from '../ScrollingText/ScrollingText';
-// import {Parallax,ParallaxLayer} from '@react-spring/parallax'
-// import { Parallax } from 'react-parallax';
+import ScrollingText from '../Scrolling/ScrollingText';
+import ScrollingAlmarah from '../Scrolling/ScrollingAlmarah'
+import ScrollingBag from '../Scrolling/ScrollingBag'
+import ScrollingBed from '../Scrolling/ScrollingBed'
+import ScrollingChair from '../Scrolling/ScrollingChair'
+
 // import image2 from '../Images/2.jpg';
- 
 
 
 const Home = () => {
+  const form = React.useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
   
   return (
     <div>
@@ -33,19 +46,13 @@ const Home = () => {
         
         
         <div id='intro'>
-            <div id='introtext'>
-              <div className='bag'>
-              <img src={bag} alt='BAG'  className='bag'/>
-              </div>
-              <div className='bag'>
-              <img src={chair} alt='BAG'  className='chair'/>
-              </div>
-              <div className='bag'>
-              <img src={almarah} alt='BAG'  className='almarah'/>
-              </div>
-              <div className='bag'>
-              <img src={bed} alt='BAG'  className='bed'/>
-              </div>
+            <div id='introtext' className='curve'>
+              {/* <ScrollingBag /> */}
+              <ScrollingChair/>
+              <ScrollingBag /> 
+              <ScrollingAlmarah /> 
+              <ScrollingBed />
+
               <ScrollingText />
               <div className='box'>
                 <img src={boxout} alt="" className='boxout '/>
@@ -140,30 +147,7 @@ const Home = () => {
 
           </div>
           <div className='books-labels'>
-          {/* <form ref={form} onSubmit={sendEmail}>  */}
-            <div className=''>
-              <input type="text"placeholder='Moving from*' class="grid-item  required" />
-              <input type="text"placeholder='Moving to*' class="grid-item " />
-            </div>
-
-            <div>
-              <input type="text" placeholder='Full Name*'class="grid-item " />
-              <input type="email" placeholder='Email*' class="grid-item " />
-            </div>
-            
-            <div>
-              <input type="date" placeholder='Moving-Date*' class="grid-item "/>
-              <input type="number" placeholder='Phone Number*' class="grid-item " />
-            </div>
-
-            <div>
-               <input type="text"placeholder='Description' class="grid-item des " id="description" colspan="2"/>
-            </div>
-            <div>
-              <input type="button" class="grid-item es" value="Submit"/>
-            </div>
-          {/* </form> */}
-
+          <ContactUs />
           </div>
         </div>
         <div id='location'>
@@ -179,5 +163,6 @@ const Home = () => {
     </div>
   )
 }
+
 
 export default Home
