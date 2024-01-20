@@ -47,12 +47,10 @@ const Home = () => {
         
         <div id='intro'>
             <div id='introtext' className='curve'>
-              {/* <ScrollingBag /> */}
               <ScrollingChair/>
               <ScrollingBag /> 
               <ScrollingAlmarah /> 
               <ScrollingBed />
-
               <ScrollingText />
               <div className='box'>
                 <img src={boxout} alt="" className='boxout '/>
@@ -144,10 +142,9 @@ const Home = () => {
         <div id='book'>
           <div className='book-text'>
             <p> Book your Slot </p>
-
           </div>
           <div className='books-labels'>
-          <ContactUs />
+            <ContactUs />
           </div>
         </div>
         <div id='location'>

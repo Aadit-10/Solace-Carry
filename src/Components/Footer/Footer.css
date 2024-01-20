@@ -1,6 +1,135 @@
-#footer{
-    height: 350px;
-    background-color: white;
+/* styles.css */
+
+/* Section Top Styles */
+section.top {
     display: grid;
-    grid-template-columns:auto auto auto auto ;
-}
+    border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+    margin: 0 30px;
+  }
+  
+  section.top h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff9ff;
+  }
+  
+  section.top img {
+    height: 50px;
+    margin: 0 auto 50px;
+  }
+  
+  section.top p {
+    margin: 0;
+  }
+  
+  section.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+  }
+  
+  section.top .socials a {
+    font-size: 20px;
+    background: rgb(45, 118, 232, 0.25);
+    color: #fff9ff;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+  
+  section.top .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+  
+  section.top .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  section.top .socials-column {
+    display: none;
+  }
+  
+  /* Section Bottom Styles */
+  section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  section.bottom .legal {
+    margin: 4px;
+  }
+  
+  section.bottom .copyright {
+    font-size: 12px;
+  }
+  
+  section.bottom .legal span {
+    margin-right: 10px;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 400px) {
+    section.top .links-column {
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    section {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    section.top .links {
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 50px;
+    }
+  
+    section.top .links-column {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    section.top .socials {
+      left: 0;
+      transform: none;
+    }
+  
+    section.top .socials-column {
+      display: block;
+    }
+  
+    section.top > img {
+      margin: 0 0 50px;
+    }
+  
+    section.bottom {
+      justify-content: flex-start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+  }
+  

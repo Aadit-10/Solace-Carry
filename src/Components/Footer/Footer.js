@@ -1,25 +1,35 @@
 // Footer.js
-
 import React from 'react';
-import './Footer.css';
+import './Footer.css'; // Create a corresponding CSS file for styling if needed
 
 const Footer = () => {
   return (
     <footer>
-      {/* Your footer content */}
-      <div id='footer'>
-        <div>
-          <h2> solace</h2>
+      <section className="top">
+        <img src="logo.svg" alt="Logo" />
+        <div className="links">
+          <div className="links-column">
+            <h2>Portfolio</h2>
+            <a>About</a>
+            {/* more links */}
+          </div>
+          {/* another links column */}
+          <div className="links-column socials-column">
+            <h2>Social Media</h2>
+            <p>Follow me on social media to</p>
+            <div className="socials">
+              <a className="fa-brands fa-instagram"></a>
+              {/* more social links */}
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>contact</h2>
+      </section>
+      <section className="bottom">
+        <p className="copyright">© 2024 ...</p>
+        <div className="legal">
+          {/* legal links */}
         </div>
-        <div>
-          <h2>working hours</h2>
-        </div>
-        <div><h3>social media</h3></div>
-
-      </div>
+      </section>
     </footer>
   );
 };
