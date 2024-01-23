@@ -74,12 +74,12 @@ export const Contact = () => {
   };
 
   return (
-    <div id="book" className="container">
-      <Row>
-        <Col className="">
-          <Image src={BookImg} className="h-100" rounded fluid />
+    <div className="container">
+      <Row id="book">
+        <Col xs={12} md={4}>
+          <Image src={BookImg} rounded fluid />
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
           <Row style={{ fontSize: "96px" }}>Book Your Slot!</Row>
           <Form ref={form} onSubmit={sendEmail}>
             {" "}
@@ -140,11 +140,10 @@ export const Contact = () => {
                   type="date"
                   className="text-center"
                   style={{ height: "70px" }}
-                  
                   required
                 />
               </Form.Group>
-              <Form.Group as={Col} controlId="email" className="py-3" >
+              <Form.Group as={Col} controlId="email" className="py-3">
                 {/* <Form.Label>Email*</Form.Label> */}
                 <Form.Control
                   type="email"

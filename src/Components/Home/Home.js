@@ -39,7 +39,7 @@ const Home = () => (
         </div> */}
       </div>
       {/* <div > */}
-        <AboutC />
+      <AboutC />
       {/* </div> */}
       <div id="services">
         <b>
@@ -79,7 +79,7 @@ const Home = () => (
       <div id="shift">
         <Shift />
       </div>
-      <div > 
+      <div>
         <ContactUs />
       </div>
       {/* <div id='location'>
