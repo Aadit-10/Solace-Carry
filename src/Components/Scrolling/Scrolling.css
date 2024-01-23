@@ -1,0 +1,36 @@
+/* Scrolling.css */
+
+.bag{
+    position: absolute;
+    top: -35px;
+    right: 350px;
+    width: 417px;
+    height: 417px;
+    z-index: 10;
+  
+  }
+  .chair{
+    position: absolute;
+    top: 86px;
+    right: 750px;
+    width: 417px;
+    height: 417px;
+    z-index: 00;
+  
+  }
+  .bed{
+    position: absolute;
+    top: 144px;
+    right: 100px;
+    z-index: 10;
+  
+  }
+  .almarah{
+    position: absolute;
+    top: -50px;
+    right: px;
+    left: 300px;
+    z-index: 10;
+  
+  }
+  

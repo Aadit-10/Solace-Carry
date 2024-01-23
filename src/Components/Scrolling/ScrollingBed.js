@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import bed from '../Images/bed.png';
+import './Scrolling.css'
 
 const ScrollingBedContainer = styled.div`
   position: absolute;
@@ -21,11 +22,11 @@ const ScrollingBed = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const maxOffsetY = 1100; // Adjust this value to set the point where scrolling stops
+      const maxOffsetY = 1000; // Adjust this value to set the point where scrolling stops
 
       if (scrollPosition <= maxOffsetY) {
-        const offsetX = -scrollPosition * 0.1;
-        const offsetY = scrollPosition * 1;
+        const offsetX = -scrollPosition * 0.3;
+        const offsetY = scrollPosition * 1.25;
 
         if (containerRef.current) {
           containerRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px)`;

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import chair from '../Images/chair.png';
+import './Scrolling.css'
 
 const ScrollingChairContainer = styled.div`
   position: absolute;
@@ -29,8 +30,8 @@ const ScrollingChair = () => {
       const maxOffsetY = 1100;
 
       if (scrollPosition <= maxOffsetY) {
-      const offsetX = scrollPosition * 0.5;
-      const offsetY = scrollPosition * 1; // Adjust the multiplier for the desired vertical speed
+      const offsetX = scrollPosition * 0.6;
+      const offsetY = scrollPosition * 1.1; // Adjust the multiplier for the desired vertical speed
 
       if (containerRef.current) {
         containerRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px)`;

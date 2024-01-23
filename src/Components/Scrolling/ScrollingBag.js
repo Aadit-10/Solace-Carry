@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import bag from '../Images/bag.png';
+import './Scrolling.css'
 
 const ScrollingBagContainer = styled.div`
   position: absolute;
@@ -24,11 +25,11 @@ const ScrollingBag = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const maxOffsetY = 1190; // Adjust this value to set the point where scrolling stops
+      const maxOffsetY = 1010; // Adjust this value to set the point where scrolling stops
 
       if (scrollPosition <= maxOffsetY) {
       const offsetX = scrollPosition * 0.2;
-      const offsetY = scrollPosition * 1.1; // Adjust the multiplier for the desired vertical speed
+      const offsetY = scrollPosition * 1.35; // Adjust the multiplier for the desired vertical speed
 
       if (containerRef.current) {
         containerRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
