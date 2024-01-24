@@ -23,8 +23,6 @@ const Home = () => (
   <div>
     <Header />
     <div id="Home">
-      {/* <h1>Dragon</h1> */}
-
       <div id="intro">
         {/* <div id="introtext">
           <ScrollingChair />
@@ -42,39 +40,7 @@ const Home = () => (
       <AboutC />
       {/* </div> */}
       <div id="services">
-        <b>
           <p id="shead">Our Services</p>
-        </b>
-        {/* <div className='service-cards'>
-          <div className='service-ccard'>
-            <img src={image1} alt='Service 1' />
-            <div className='service-details'>
-              <h3>Local moving</h3>
-              <p>Description of Service 1</p>
-            </div>
-          </div>
-          <div className='service-ccard'>
-            <img src={image1} alt='Service 1' />
-            <div className='service-details'>
-              <h3>Local moving</h3>
-              <p>Description of Service 1</p>
-            </div>
-          </div>
-          <div className='service-ccard'>
-            <img src={image1} alt='Service 1' />
-            <div className='service-details'>
-              <h3>Local moving</h3>
-              <p>Description of Service 1</p>
-            </div>
-          </div><div className='service-ccard'>
-            <img src={image1} alt='Service 1' />
-            <div className='service-details'>
-              <h3>Local moving</h3>
-              <p>Description of Service 1</p>
-            </div>
-          </div>
-          
-        </div> */}
       </div>
       <div id="shift">
         <Shift />

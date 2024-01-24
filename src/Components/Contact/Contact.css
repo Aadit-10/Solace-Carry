@@ -1,47 +1,8 @@
 /* Contact.css */
 
 #book {
-  /* display: grid;
-  grid-template-columns: auto auto; */
   background-color: blanchedalmond;
 }
-/* .book-curved{
-  display: grid;
-  grid-template-columns: ;
-} */
-.books-labels {
-  /* margin: 10px 10px; */
-  background-color: chartreuse;
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-}
-
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
-  .grid-item {
-    max-width: none;
-    margin-right: 15px;
-    width: calc(50% - 10px);
-  }
-
-  .des {
-    max-width: none;
-  }
-}
-
-.grid-item {
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-width: 169px;
-  margin-bottom: 15px;
-  border-radius: 8px; /* Set border-radius for curved edges */
-}
-
-.des {
-  width: 100%;
-  max-width: 349px;
-  height: 88px;
-  border-radius: 8px; /* Set border-radius for curved edges */
+.place::placeholder {
+  color: #94a3b8; /* Change this to the desired placeholder color */
 }

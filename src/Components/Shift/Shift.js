@@ -14,25 +14,28 @@ const Shift = () => {
   return (
     <div id="shift" className="container pb-5">
       <Container>
-        <Row >
+        <Row>
           <h1
             className="py-5 "
-            style={{ fontSize: "90px", fontWeight: "bold" }}
+            style={{
+              fontSize: "90px",
+              fontFamily: "SF Pro Display, sans-serif",
+            }}
           >
             Shifting process
           </h1>
         </Row>
-        <Row noGutters xs={1} sm={1} md={2} lg={2} xl={2} xxl={4}>
+        <Row noGutters xs={1} sm={1} md={2} lg={2} xl={2} xxl={4} className="justify-content-center">
           <Col>
             <Card
-              className=""
+              className="mb-5"
               style={{
                 width: "305.06px",
                 height: "464px",
                 borderRadius: "0 66px 0 66px",
                 backgroundColor: "black",
                 color: "white",
-                fontFamily: "SF Pro",
+                fontFamily: "SF Pro ",
               }}
             >
               <Card.Img
@@ -57,6 +60,7 @@ const Shift = () => {
           </Col>
           <Col>
             <Card
+              className="mb-5"
               style={{
                 width: "305.06px",
                 height: "464px",
@@ -87,77 +91,77 @@ const Shift = () => {
             </Card>
           </Col>
           <Col>
-          <Card
-            style={{
-              width: "305.06px",
-              height: "464px",
-              borderRadius: "22px 22px 22px 22px",
-              backgroundColor: "black",
-              color: "white",
-              fontFamily: "SF Pro",
-            }}
-          >
-            <Card.Img
-              variant="top"
-              src={SafeTransport}
+            <Card
+              className="mb-5"
               style={{
                 width: "305.06px",
-                height: "303.16px",
-                borderRadius: "20px 20px 0 0 ",
+                height: "464px",
+                borderRadius: "22px 22px 22px 22px",
+                backgroundColor: "black",
+                color: "white",
+                fontFamily: "SF Pro",
               }}
-              alt="Shifting Image"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "40px", fontWeight: "bold" }}>
-                Safe Transport
-              </Card.Title>
-              <Card.Text style={{ fontSize: "20px" }}>
-                Book an appointment from our Website
-              </Card.Text>
-            </Card.Body>
-          </Card>
+            >
+              <Card.Img
+                variant="top"
+                src={SafeTransport}
+                style={{
+                  width: "305.06px",
+                  height: "303.16px",
+                  borderRadius: "20px 20px 0 0 ",
+                }}
+                alt="Shifting Image"
+              />
+              <Card.Body>
+                <Card.Title style={{ fontSize: "40px", fontWeight: "bold" }}>
+                  Safe Transport
+                </Card.Title>
+                <Card.Text style={{ fontSize: "20px" }}>
+                  Book an appointment from our Website
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
           <Col>
-          <Card
-            style={{
-              width: "305.06px",
-              height: "464px",
-              borderRadius: "70px 0 66px 0",
-              backgroundColor: "black",
-              color: "white",
-              fontFamily: "SF Pro",
-            }}
-          >
-            <Card.Img
-              variant="top"
-              src={Unloading}
+            <Card
+              className="mb-5"
               style={{
                 width: "305.06px",
-                height: "303.16px",
-                borderRadius: "60px 0 0 0",
+                height: "464px",
+                borderRadius: "70px 0 66px 0",
+                backgroundColor: "black",
+                color: "white",
+                fontFamily: "SF Pro",
               }}
-              alt="Shifting Image"
-            />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "39px", fontWeight: "bold" }}>
-                Safe Unloading
-              </Card.Title>
-              <Card.Text style={{ fontSize: "20px" }}>
-                Book an appointment from our Website
-              </Card.Text>
-            </Card.Body>
-          </Card>
+            >
+              <Card.Img
+                variant="top"
+                src={Unloading}
+                style={{
+                  width: "305.06px",
+                  height: "303.16px",
+                  borderRadius: "60px 0 0 0",
+                }}
+                alt="Shifting Image"
+              />
+              <Card.Body>
+                <Card.Title style={{ fontSize: "39px", fontWeight: "bold" }}>
+                  Safe Unloading
+                </Card.Title>
+                <Card.Text style={{ fontSize: "20px" }}>
+                  Book an appointment from our Website
+                </Card.Text>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
 
-      <div >
+      <div>
         <div></div>
         <div></div>
-        <div>
-        </div>
-        <div>
-        </div>
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
