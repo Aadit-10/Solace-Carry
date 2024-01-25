@@ -1,4 +1,4 @@
-import React, { useRef,useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import BookImg from "../Images/book-img.png";
@@ -16,7 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const Contact = () => {
   // console.log(process.env.REACT_APP_EMAILJS_API_KEY);
   const form = useRef();
-  const descriptionRef = useRef(null); 
+  const descriptionRef = useRef(null);
   const notify = () => {
     toast.promise(
       new Promise((resolve, reject) => {
@@ -80,6 +80,7 @@ export const Contact = () => {
         <Col xs={12} md={4}>
           <Image src={BookImg} rounded fluid />
         </Col>
+        
         <Col xs={12} md={6}>
           <Row style={{ fontSize: "95px", color: "white" }}>
             Book Your Slot!
@@ -98,6 +99,7 @@ export const Contact = () => {
                     height: "70px",
                     backgroundColor: "black",
                     color: "white",
+                    border: "1px solid black",
                   }}
                   className="text-center place"
                   required
@@ -113,6 +115,7 @@ export const Contact = () => {
                     height: "70px",
                     backgroundColor: "black",
                     color: "white",
+                    border: "1px solid black",
                   }}
                   className="text-center place"
                   required
@@ -130,6 +133,7 @@ export const Contact = () => {
                     height: "70px",
                     backgroundColor: "black",
                     color: "white",
+                    border: "1px solid black",
                   }}
                   className="text-center place"
                   required
@@ -145,6 +149,8 @@ export const Contact = () => {
                     height: "70px",
                     backgroundColor: "black",
                     color: "white",
+                    border: "1px solid black",
+                    
                   }}
                   className="text-center place"
                   required
@@ -157,7 +163,12 @@ export const Contact = () => {
                 <Form.Control
                   name="date"
                   type="date"
-                  style={{ height: "70px", backgroundColor: "black", color: "white" }}
+                  style={{
+                    height: "70px",
+                    backgroundColor: "black",
+                    color: "white",
+                    border: "1px solid black",
+                  }}
                   className="text-center place"
                   required
                 />
@@ -167,7 +178,12 @@ export const Contact = () => {
                 <Form.Control
                   type="email"
                   placeholder="Email*"
-                  style={{ height: "70px", backgroundColor: "black", color: "white" }}
+                  style={{
+                    height: "70px",
+                    backgroundColor: "black",
+                    color: "white",
+                    border: "1px solid black",
+                  }}
                   className="text-center place"
                   name="email"
                   required
@@ -181,7 +197,11 @@ export const Contact = () => {
                   name="description"
                   as="textarea"
                   rows={6}
-                  style={{ backgroundColor: "black", color: "white" }}
+                  style={{
+                    backgroundColor: "black",
+                    color: "white",
+                    border: "1px solid black",
+                  }}
                   className="text-center place"
                   placeholder="Description"
                   ref={descriptionRef}
@@ -195,7 +215,7 @@ export const Contact = () => {
                   type="submit"
                   value="Send"
                   style={{
-                    width: descriptionRef.current?.offsetWidth || '100%', // Match width to description field
+                    width: descriptionRef.current?.offsetWidth || "100%", // Match width to description field
                     height: "70px",
                   }}
                 >

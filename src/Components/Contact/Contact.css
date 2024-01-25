@@ -1,8 +1,23 @@
 /* Contact.css */
 
 #book {
-  background-color: blanchedalmond;
+  background-color: #352C90;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
 }
+
+
 .place::placeholder {
   color: #94a3b8; /* Change this to the desired placeholder color */
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+/* Firefox */
+/* input[type=number] {
+    -moz-appearance: textfield;
+} */

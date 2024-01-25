@@ -22,9 +22,12 @@ import ScrollingChair from "../Scrolling/ScrollingChair";
 const Home = () => (
   <div>
     <Header />
-    <div id="Home">
+    <div
+      id="Home"
+      style={{ background: "linear-gradient(to top, #005AA7, #FFFDE4)" }}
+    >
       <div id="intro">
-        {/* <div id="introtext">
+        <div id="introtext">
           <ScrollingChair />
           <ScrollingBag />
           <ScrollingAlmarah />
@@ -34,13 +37,13 @@ const Home = () => (
           <img src={boxout} alt="" className="boxout " />
           <img src={fullbox} alt="" className="fullbox " />
         </div>
-        </div> */}
+        </div>
       </div>
       {/* <div > */}
       <AboutC />
       {/* </div> */}
       <div id="services">
-          <p id="shead">Our Services</p>
+        <p id="shead">Our Services</p>
       </div>
       <div id="shift">
         <Shift />

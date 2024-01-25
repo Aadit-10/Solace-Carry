@@ -28,13 +28,14 @@ const Shift = () => {
         <Row noGutters xs={1} sm={1} md={2} lg={2} xl={2} xxl={4} className="justify-content-center">
           <Col>
             <Card
-              className="mb-5"
+              className="mb-5 "
               style={{
                 width: "305.06px",
                 height: "464px",
-                borderRadius: "0 66px 0 66px",
+                borderRadius: "0 66px 0 66px" ,
                 backgroundColor: "black",
                 color: "white",
+                
                 fontFamily: "SF Pro ",
               }}
             >

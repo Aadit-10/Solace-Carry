@@ -15,16 +15,22 @@
 }
 body {
   overflow-x: hidden;
+  
+}
+#Home{
+  /* background: "linear-gradient(to top, #005AA7, #FFFDE4)"; */
+  background: 'linear-gradient(to top, #7F7FD5, #86A8E7, #91EAE4)';
+  
 }
 
 #intro {
   width: 100%;
   height: 250vh;
   min-height: 200vh;
-  background-color: #ffa800;
-  background-image: url("../Images/texturebg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url("../Images/texturebg.png"); */
+  /* background-color: #ffa800; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   /* position: relative; */
 }
 
@@ -56,7 +62,7 @@ body {
 #services {
   width: 100%;
   height: 100vh;
-  background-color: #ffa800;
+  /* background-color: #ffa800; */
 }
 
 #shead {
