@@ -1,17 +1,39 @@
-/* #shift {
-  background: #ff6b6b;
-  height: 100vh;
+/* Shift.css */
+@media only screen and (max-width: 576px) {
+  .shift-text {
+    font-size: 49px; 
+  }
 }
 
-.main-container {
-  display: flex;
-  width: 100vw;
-  background-color: #ff6b6b;
-  justify-content: space-around; 
+/* Add another media query for larger screens if needed */
+@media only screen and (min-width: 577px) {
+  .shift-text {
+    font-size: 90px; 
+    font-family: "SF Pro Display";
+  }
 }
 
-.container {
+.shift-card {
   width: 305.06px;
-  height: 481px;
-  margin-right: 20px; 
-} */
+  height: 464px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "SF Pro ";
+}
+
+.shift-card-img {
+  width: 306.5px;
+  height: 303.16px;
+  border-radius: 20px 20px 0 0; /* No quotes around the values */
+}
+
+.card-head {
+  font-size: 40px;
+  font-weight: bold; /* Corrected property */
+}
+
+.card-text {
+  font-size: 20px;
+}

@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import ContactUs from "../Contact/Contact";
 import AboutC from "../AboutC/AboutC";
 import Shift from "../Shift/Shift";
+import Services from "../Services/Services";
 import "./Home.css";
 import image1 from "../Images/1.png";
 
@@ -24,7 +25,7 @@ const Home = () => (
     <Header />
     <div
       id="Home"
-      style={{ background: "linear-gradient(to top, #005AA7, #FFFDE4)" }}
+      style={{ background: "linear-gradient(to top, #7F7FD5, #86A8E7, #91EAE4)" }}
     >
       <div id="intro">
         <div id="introtext">
@@ -42,8 +43,9 @@ const Home = () => (
       {/* <div > */}
       <AboutC />
       {/* </div> */}
-      <div id="services">
-        <p id="shead">Our Services</p>
+      <div >
+        <Services />
+       
       </div>
       <div id="shift">
         <Shift />

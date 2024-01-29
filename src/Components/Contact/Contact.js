@@ -74,15 +74,14 @@ export const Contact = () => {
   };
 
   return (
-    // <div className="container">
     <Container>
       <Row id="book">
-        <Col xs={12} md={4}>
+        <Col  xs={12} md={6}>
           <Image src={BookImg} rounded fluid />
         </Col>
-        
+
         <Col xs={12} md={6}>
-          <Row style={{ fontSize: "95px", color: "white" }}>
+          <Row className="book-text px-3" style={{ color: "white" }}>
             Book Your Slot!
           </Row>
           <Form ref={form} onSubmit={sendEmail}>
@@ -150,7 +149,6 @@ export const Contact = () => {
                     backgroundColor: "black",
                     color: "white",
                     border: "1px solid black",
-                    
                   }}
                   className="text-center place"
                   required
@@ -215,8 +213,13 @@ export const Contact = () => {
                   type="submit"
                   value="Send"
                   style={{
-                    width: descriptionRef.current?.offsetWidth || "100%", // Match width to description field
+                    width: descriptionRef.current?.offsetWidth || "100%",
                     height: "70px",
+                    fontSize: "40px", 
+                    color:'black',
+                    // backgroundImage: `url(${require('../Images/buttonbg.png')})`,
+                    backgroundSize: "cover", 
+                    backgroundColor: "#f2efef", 
                   }}
                 >
                   Send
@@ -240,7 +243,6 @@ export const Contact = () => {
         </Col>
       </Row>
     </Container>
-    // </div>
   );
 };
 

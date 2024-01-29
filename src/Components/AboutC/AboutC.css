@@ -7,6 +7,7 @@
 #aboutc {
   width: 100%;
   min-height: 100vh;
+
   /* background-image: url('../Images/aboutc.png'); */
   /* display: flex;
   flex-direction: column;
@@ -35,42 +36,3 @@
   width: 80%;
 }
 
-/* Media Queries */
- /* @media screen and (min-width: 768px) {
-  .ac {
-    font-size: 4rem;
-    margin-top: -40px;
-  }
-
-  .company-info {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-
-  .card1 {
-    width: 30%;
-    margin-right: 20px;
-  }
-
-  .description {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .ac {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-left: 0; 
-  }
-
-  .card1 {
-    width: 100%;
-    max-width: none;
-  }
-
-  .description {
-    width: 100%;
-    max-width: none;
-  }
-}  */

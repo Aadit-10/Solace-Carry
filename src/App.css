@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "SF Pro Display Medium";
+  src: url(./Fonts/Sfpro/SFPRODISPLAYMEDIUM.OTF) format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(./Fonts/Sfpro/SFPRODISPLAYREGULAR.OTF) format("opentype");
+}
+
+* {
+  font-family: "SF Pro Display";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

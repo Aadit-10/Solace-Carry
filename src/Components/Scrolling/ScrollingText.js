@@ -9,7 +9,7 @@ const ScrollingTextContainer = styled.div`
   white-space: nowrap;
   color: black;
   font-size: 250px;
-  font-family: 'Notable', sans-serif;
+  // font-family: 'Notable', sans-serif;
   overflow: hidden;
 
   @media (max-width: 768px) {

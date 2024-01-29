@@ -4,6 +4,7 @@
   background-color: #352C90;
   backdrop-filter: blur(10px);
   border-radius: 15px;
+  /* height: 400px; */
 }
 
 
@@ -21,3 +22,18 @@ input[type=number]::-webkit-outer-spin-button {
 /* input[type=number] {
     -moz-appearance: textfield;
 } */
+
+@media only screen and (max-width: 576px) {
+  .book-text {
+    font-size: 49px; 
+    margin-left: 8px;
+  }
+}
+
+/* Add another media query for larger screens if needed */
+@media only screen and (min-width: 577px) {
+  .book-text {
+    font-size: 95px; 
+    font-family: "SF Pro Display";
+  }
+}
