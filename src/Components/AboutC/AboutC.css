@@ -7,32 +7,33 @@
 #aboutc {
   width: 100%;
   min-height: 100vh;
-
+  padding: 20px;
   /* background-image: url('../Images/aboutc.png'); */
   /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
-  padding: 20px;
 }
 
 .ac {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: normal;
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Display Medium";
   margin-top: 20px;
   /* margin-bottom: 20px; */
 }
 
-
-
 .description {
-  /* max-width: 800px; */
   font-size: 1.5rem;
+  /* max-width: 800px; */
   /* box-sizing: border-box; */
-  
 }
 .aboutcdes {
   width: 80%;
 }
-
+@media only screen and (min-width: 768px)
+ and (max-width: 1024px) {
+  .ac{
+    font-size: 3rem;
+  }
+}

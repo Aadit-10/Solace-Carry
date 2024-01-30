@@ -75,7 +75,7 @@ export const Contact = () => {
 
   return (
     <Container>
-      <Row id="book">
+      <Row id="book" className="py-3">
         <Col  xs={12} md={6}>
           <Image src={BookImg} rounded fluid />
         </Col>

@@ -11,10 +11,18 @@
   font-family: "SF Pro Display";
   src: url(./Fonts/Sfpro/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
-
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url(./Fonts/Sfpro/SFPRODISPLAYBOLD.OTF) format("opentype");
+}
+ 
 * {
   font-family: "SF Pro Display";
-}
+} 
+
+/* h1 {
+  font-family: "SF Pro Display Bold";
+} */
 
 .App-logo {
   height: 40vmin;

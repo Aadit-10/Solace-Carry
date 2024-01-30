@@ -1,0 +1,32 @@
+.boxout {
+  position: absolute;
+  z-index: 20;
+  top: 645px;
+}
+.fullbox {
+  position: absolute;
+  z-index: 0;
+}
+.box {
+  position: absolute;
+  top: 500px;
+}
+@media only screen and (max-width: 576px) {
+  .boxout {
+    width: 350px;
+    height: 210px;
+    top: 557px;
+  }
+
+  .fullbox {
+    width: 350px;
+    height: 350px;
+    top: 400px; /* Adjust the top value for mobile view */
+  }
+
+  .box {
+    width: 350px;
+    height: 350px;
+    /* top: ;  */
+  }
+}

@@ -4,7 +4,6 @@ import Image1 from '../Images/1.png';
 import Image2 from '../Images/2.jpg';
 import Image3 from '../Images/3.jpg';
 
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -21,30 +20,38 @@ const servicesData = [
 const Services = () => {
   return (
     <div id="services">
-      <p id="shead">Our Services</p>
+      <h1 id="shead"> Our Services </h1>
+      <p ></p>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
+        loop={true}
+        autoplay={{
+          delay: 200, // Adjust the delay as needed
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 50,
-          stretch: 0,
-          depth: 100,
+          stretch: -100,
+          depth: 500,
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        // pagination={true}
+        modules={[EffectCoverflow]}
+        // modules={[EffectCoverflow, Pagination]}
+
         className="mySwiper"
       >
         {servicesData.map((service, index) => (
           <SwiperSlide key={index}>
             <div className="swiper-slide-content">
               {/* You can use different images for each slide */}
-              {index === 0 && <img src={Image1} alt={`Slide ${index + 1}`} />}
+              {index === 0 && <img src={Image2} alt={`Slide ${index + 1}`} />}
               {index === 1 && <img src={Image2} alt={`Slide ${index + 1}`} />}
-              {index === 2 && <img src={Image3} alt={`Slide ${index + 1}`} />}
+              {index === 2 && <img src={Image2} alt={`Slide ${index + 1}`} />}
               {/* Add more conditions for additional slides */}
 
               <div className="text-container">

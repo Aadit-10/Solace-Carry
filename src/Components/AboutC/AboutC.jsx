@@ -51,7 +51,7 @@ const AboutC = () => {
           <Image
             src={image1}
             rounded
-            style={{ width: "400px", height: "85%" }}
+            style={{ width: "350px", height: "85%" }}
           />
         </Col>
         <Col xs={12} md={6} className="d-none d-sm-block">
