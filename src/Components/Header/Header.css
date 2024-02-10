@@ -1,24 +1,29 @@
 /* Header.css */
 
-
-@font-face {
-  font-family: 'SF Pro';
-  src: local('SF Pro'), local('SF-Pro'), url('../../Fonts/Sfpro/SFPRODISPLAYREGULAR.OTF') format('opentype');
+/* @font-face {
+  font-family: "SF Pro";
+  src: local("SF Pro"), local("SF-Pro"),
+    url("../../Fonts/Sfpro/SFPRODISPLAYREGULAR.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: local('SF Pro'), local('SF-Pro'), url('../../Fonts/Sfpro/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-family: "SF Pro";
+  src: local("SF Pro"), local("SF-Pro"),
+    url("../../Fonts/Sfpro/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight: bold;
   font-style: normal;
-}
-
+} */
 
 /* .logo{
   margin-right: 
 } */
+.nav-link-laptop,
+.nav-link-laptop:hover,
+.nav-link-laptop:focus {
+  color: #fff !important;
+}
 header {
   background-color: rgba(0, 0, 0, 0.86);
   color: #fff;
@@ -28,9 +33,17 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'SF Pro', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   display: flex;
-  
+}
+.nav-link-laptop{
+  font-family: "SF Pro Display", sans-serif;
+}
+@media (min-width: 768px) {
+  .nav-link-laptop {
+    margin-right: 40px; /* Adjust the margin as needed */
+    margin-left: auto;
+  }
 }
 
 .profile-icon {
@@ -47,7 +60,6 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px;
-  
 }
 
 nav ul li:last-child {

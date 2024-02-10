@@ -20,7 +20,7 @@ const Home = () => (
     <div
       id="Home"
       style={{
-        background: "linear-gradient(to top, #7F7FD5, #86A8E7, #91EAE4)", 
+        // background: "linear-gradient(to top, #7F7FD5, #86A8E7, #91EAE4)", 
         // backgroundImage: `url(${require("../Images/texturebg.png")})`,
         // backgroundSize: "cover",
       }}

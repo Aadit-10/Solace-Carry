@@ -1,3 +1,4 @@
+// App.js
 import "./App.css";
 import Home from "./Components/Home/Home";
 

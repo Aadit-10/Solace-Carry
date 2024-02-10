@@ -222,7 +222,7 @@ export const Contact = () => {
                     backgroundColor: "#f2efef", 
                   }}
                 >
-                  Send
+                  Submit
                 </Button>
                 <ToastContainer
                   transition={Zoom}

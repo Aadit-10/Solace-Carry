@@ -1,69 +1,75 @@
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image1 from '../Images/1.png';
-import Image2 from '../Images/2.jpg';
-import Image3 from '../Images/3.jpg';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper';
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
 import "./Services.css";
 
-const servicesData = [
-  { title: "Service 1", description: "Description for Service 1" },
-  { title: "Service 2", description: "Description for Service 2" },
-  { title: "Service 3", description: "Description for Service 3" },
-  // Add more services as needed
-];
+import Image1 from "../Images/House Shifting.png";
+import Image2 from "../Images/Industrial Shifting.png";
+import Image3 from "../Images/Vehicle Shifting.png";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 
 const Services = () => {
   return (
-    <div id="services">
-      <h1 id="shead"> Our Services </h1>
-      <p ></p>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        loop={true}
-        autoplay={{
-          delay: 200, // Adjust the delay as needed
-          disableOnInteraction: false,
-        }}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: -100,
-          depth: 500,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        // pagination={true}
-        modules={[EffectCoverflow]}
-        // modules={[EffectCoverflow, Pagination]}
-
-        className="mySwiper"
-      >
-        {servicesData.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div className="swiper-slide-content">
-              {/* You can use different images for each slide */}
-              {index === 0 && <img src={Image2} alt={`Slide ${index + 1}`} />}
-              {index === 1 && <img src={Image2} alt={`Slide ${index + 1}`} />}
-              {index === 2 && <img src={Image2} alt={`Slide ${index + 1}`} />}
-              {/* Add more conditions for additional slides */}
-
-              <div className="text-container">
-                <h2>{service.title}</h2>
-                <p>{service.description}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div id="services" className="mt-3">
+      <Container>
+        <Col>
+          <Row>
+            <Col>
+              {/*in col just above className=" services-text d-flex align-items-center " */}
+              <h1>Services we provide</h1>
+            </Col>
+            <Col xs={12} md={3}>
+              <Image
+                className="image-card"
+                src={Image1}
+                alt="Your Alt Text"
+                fluid
+                rounded
+              />
+              <p className="service-name">House Shifting</p>
+              <p className="px-3 service-text">
+                Experience stress-free relocation with our comprehensive house
+                shifting services, handling every aspect to make your move
+                comfortable and worry-free.
+              </p>
+            </Col>
+            <Col xs={12} md={3}>
+              <Image
+                className="image-card"
+                src={Image3}
+                alt="Your Alt Text"
+                fluid
+                rounded
+              />
+              <p className="service-name"> Vehicle Shifting</p>
+              <p className="px-3 service-text">
+                Safely transport your vehicles with our reliable services,
+                ensuring a smooth relocation for your cars, bikes, and more.
+              </p>
+            </Col>
+            <Col xs={12} md={3}>
+              <Image
+                className="image-card"
+                src={Image2}
+                alt="Your Alt Text"
+                fluid
+                rounded
+              />
+              <p className="service-name">Industrial/Office Shifting</p>
+              <p className="px-3 service-text">
+                Effortless business moves – our services guarantee a seamless
+                transition for your office or industrial space, minimizing
+                downtime and maximizing efficiency.
+              </p>
+            </Col>
+          </Row>
+        </Col>
+      </Container>
     </div>
   );
-}
+};
 
 export default Services;

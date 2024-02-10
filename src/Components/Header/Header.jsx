@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../../../node_modules/bootstrap/dist/js/bootstrap';
+import 'bootstrap';
 
 import Profile from '../Images/ProfileIcon.png';
 import logo from '../Images/LOGO.png'
@@ -24,10 +24,10 @@ function Header() {
              */}
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Home</Nav.Link>
-            <Nav.Link href="#deets">Services</Nav.Link>
-            <Nav.Link href="#deets">Booking</Nav.Link>
-            <Nav.Link href="#deets">Work Gallery</Nav.Link>
+            <Nav.Link href="#" className="nav-link-laptop">Home</Nav.Link>
+            <Nav.Link href="#services" className="nav-link-laptop">Services</Nav.Link>
+            <Nav.Link href="#book" className="nav-link-laptop">Booking</Nav.Link>
+            <Nav.Link href="#deets" className="nav-link-laptop">Work Gallery</Nav.Link>
             {/* <Nav.Link href="#deets"><img src={Profile} alt="" /></Nav.Link> */}
           </Nav>
         </Navbar.Collapse>

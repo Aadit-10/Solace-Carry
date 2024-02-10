@@ -1,6 +1,18 @@
 .App {
   text-align: center;
 }
+body {
+  /* background: url("./Components/Images/texturebg.png") no-repeat center center
+      fixed,
+    linear-gradient(
+      to top,
+      rgba(127, 127, 213, 0.8),
+      rgba(134, 168, 231, 0.8),
+      rgba(145, 234, 228, 0.8)
+    );
+  background-size: cover; */
+  background: linear-gradient(to bottom, #F1FCF8, #7CD4C0);
+}
 
 @font-face {
   font-family: "SF Pro Display Medium";
@@ -15,14 +27,14 @@
   font-family: "SF Pro Display Bold";
   src: url(./Fonts/Sfpro/SFPRODISPLAYBOLD.OTF) format("opentype");
 }
- 
+/* 
 * {
   font-family: "SF Pro Display";
-} 
-
-/* h1 {
-  font-family: "SF Pro Display Bold";
 } */
+
+h1 {
+  font-family: "SF Pro Display Bold";
+}
 
 .App-logo {
   height: 40vmin;
