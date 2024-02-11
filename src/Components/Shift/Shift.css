@@ -12,7 +12,9 @@
   color: white;
   font-family: "SF Pro Display ";
 }
-
+.shift-text{
+  font-family: "SF Pro Display Bold";
+}
 .shift-card-img {
   width: 306.5px;
   height: 303.16px;

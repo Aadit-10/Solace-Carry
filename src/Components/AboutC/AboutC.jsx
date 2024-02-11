@@ -15,7 +15,7 @@ const AboutC = () => {
           <Row>
             <Col xs={12}>
               <div className="ac">
-                <h1>About Solace</h1>
+                <p>About Solace</p>
               </div>
             </Col>
             <Col xs={12}>
@@ -54,7 +54,7 @@ const AboutC = () => {
         </Col>
         <Col xs={12} md={6} className="py-5 d-none d-sm-block">
           <div className="ac">
-            <h1>About Solace</h1>
+          <p>About Solace</p>
           </div>
           <p className="description">
             Solace Carry is your trusted relocation partner, ensuring smooth

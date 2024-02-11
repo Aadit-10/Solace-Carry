@@ -81,7 +81,7 @@ export const Contact = () => {
         </Col>
 
         <Col xs={12} md={6}>
-          <Row className="book-text px-3" style={{ color: "white" }}>
+          <Row className="book-text px-3" >
             Book Your Slot!
           </Row>
           <Form ref={form} onSubmit={sendEmail}>

@@ -15,6 +15,22 @@ body {
 }
 
 @font-face {
+  font-family: "Protest Strike";
+  src: local("Protest Strike"),
+    url("../src/Fonts/another/ProtestStrike-Regular.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: local("Oswald-Regular"),
+    url("../src/Fonts/another/Oswald-Regular.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SF Pro Display Medium";
   src: url(./Fonts/Sfpro/SFPRODISPLAYMEDIUM.OTF) format("opentype");
 }
@@ -32,9 +48,9 @@ body {
   font-family: "SF Pro Display";
 } */
 
-h1 {
+/* h1 {
   font-family: "SF Pro Display Bold";
-}
+} */
 
 .App-logo {
   height: 40vmin;

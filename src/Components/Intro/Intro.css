@@ -22,13 +22,14 @@
 }
 .packers-movers {
   font-size: 40px;
-  color: #494962; /* Adjust the font size as needed */
+  color: #494962; 
+  /* margin-top: -10px; */
 }
 
 .marching-font {
   font-family: "Marcher", sans-serif;
   padding-top: 100px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 

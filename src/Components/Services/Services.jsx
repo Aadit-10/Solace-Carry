@@ -17,9 +17,9 @@ const Services = () => {
       <Container>
         <Col>
           <Row>
-            <Col>
-              {/*in col just above className=" services-text d-flex align-items-center " */}
-              <h1>Services we provide</h1>
+            <Col className="  d-flex align-items-center">
+              {/*in col just above className=" service-text d-flex align-items-center " */}
+              <p className="swp ">Services we provide</p>
             </Col>
             <Col xs={12} md={3}>
               <Image
@@ -30,7 +30,7 @@ const Services = () => {
                 rounded
               />
               <p className="service-name">House Shifting</p>
-              <p className="px-3 service-text">
+              <p className="px-4 service-text">
                 Experience stress-free relocation with our comprehensive house
                 shifting services, handling every aspect to make your move
                 comfortable and worry-free.
@@ -45,7 +45,7 @@ const Services = () => {
                 rounded
               />
               <p className="service-name"> Vehicle Shifting</p>
-              <p className="px-3 service-text">
+              <p className="px-4 service-text">
                 Safely transport your vehicles with our reliable services,
                 ensuring a smooth relocation for your cars, bikes, and more.
               </p>
@@ -59,7 +59,7 @@ const Services = () => {
                 rounded
               />
               <p className="service-name">Industrial/Office Shifting</p>
-              <p className="px-3 service-text">
+              <p className="px-4 service-text">
                 Effortless business moves – our services guarantee a seamless
                 transition for your office or industrial space, minimizing
                 downtime and maximizing efficiency.

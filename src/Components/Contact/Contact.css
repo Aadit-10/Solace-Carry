@@ -2,21 +2,26 @@
 
 #book {
   margin-bottom: 20px;
-  background-color: #005941;
-  backdrop-filter: blur(10px);
+  background-color: #6bd6b8;
+  box-shadow: inset 450px 0px 500px 50px #126d55;
+  /* backdrop-filter: blur(10px); */
+  /* padding: 20px; */
   border-radius: 15px;
-  font-family: "SF Pro Display";
+  /* font-family: "SF Pro Display"; */
 }
-
+.book-text {
+  font-size: 90px;
+  font-family: "SF Pro Display Bold";
+}
 
 .place::placeholder {
   color: #94a3b8; /* Change this to the desired placeholder color */
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    appearance: none; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* Firefox */
@@ -27,26 +32,31 @@ input[type=number]::-webkit-outer-spin-button {
 /* mobile view */
 @media only screen and (max-width: 576px) {
   .book-text {
-    font-size: 49px; 
+    color: black;
+    font-size: 49px;
     margin-left: 8px;
   }
-  h1{
+  h1 {
     font-size: 3rem;
+  }
+
+  #book {
+    box-shadow: inset 0px 670px 534px 50px #126d55;
   }
 }
 
 /* Add another media query for larger screens if needed */
-@media only screen and (min-width: 577px) {
+/* @media only screen and (min-width: 577px) {
   .book-text {
-    font-size: 95px; 
-    font-family: "SF Pro Display";
+    font-size: 95px;
+    font-family: "SF Pro Display Bold";
   }
-}
+} */
 
 /* Media query for iPads and tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .book-text {
     font-size: 51px; /* Adjust the font size as needed for tablets */
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display Bold";
   }
 }

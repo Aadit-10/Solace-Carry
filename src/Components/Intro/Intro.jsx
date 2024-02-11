@@ -33,6 +33,14 @@ const Intro = () => {
             {/* <p className="making"> MOVE QUICK AND EASY</p> */}
           </div>
         </Col>
+        <Col xs={12} className="d-block d-sm-none ">
+        {/* <img
+            ref={animatedElementRef}
+            src={truck} // Set the path to your image
+            alt="Animated Image"
+            className="animate__animated animate__fadeInRight"
+          /> */}
+        </Col>
 
         {/* sm and larger screens */}
         <Col xs={12} md={6} className="intro-text d-none d-sm-block ">
@@ -44,14 +52,14 @@ const Intro = () => {
             <p className="making">MOVING DREAMS DELIVERING TRUST</p>
           </div>
         </Col>
-        {/* <Col className="d-none d-sm-block">
-          <img
+        <Col className="d-none d-sm-block">
+          {/* <img
             ref={animatedElementRef}
             src={truck} // Set the path to your image
             alt="Animated Image"
             className="animate__animated animate__fadeInRight"
-          />
-        </Col> */}
+          /> */}
+        </Col>
       </Container>
     </div>
   );

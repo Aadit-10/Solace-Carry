@@ -19,11 +19,13 @@
   font-weight: normal;
   /* font-family: "SF Pro Display Medium"; */
   margin-top: 20px;
+  font-family: 'Protest Strike', sans-serif;
   /* margin-bottom: 20px; */
 }
 
 .description {
   font-size: 23px;
+  
   /* text-align: justify; */
 }
 .aboutcdes {
