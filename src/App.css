@@ -11,7 +11,7 @@ body {
       rgba(145, 234, 228, 0.8)
     );
   background-size: cover; */
-  background: linear-gradient(to bottom, #F1FCF8, #7CD4C0);
+  background: linear-gradient(to bottom, #f1fcf8, #7cd4c0);
 }
 
 @font-face {
@@ -29,6 +29,19 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Protest Riot";
+  src: local("Protest Riot"),
+    url("../src/Fonts/another/ProtestRiot-Regular.ttf") format("opentype");
+  
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"),
+    url("../src/Fonts/another/NotoSans.ttf") format("opentype");
+  
+}
+
 
 @font-face {
   font-family: "SF Pro Display Medium";

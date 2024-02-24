@@ -9,21 +9,22 @@
   width: 300px;
 }
 .swp {
-  font-family: "SF Pro Display bold";
-  /* font-family: 'Protest Strike', sans-serif; */
+  /* font-family: "SF Pro Display bold"; */
+  font-family: 'Protest Strike', sans-serif;
   font-size: 50px;
   /* text-align: justify; */
 }
 
 .service-name {
-  font-size: 29px;
+  font-size: 26px;
   font-weight: bold;
   font-family: "SF Pro Display";
 }
 .service-text {
   font-size: 16px;
-  text-align: justify;
-  font-family: "SF Pro Display";
+  /* text-align: justify; */
+  font-family: "Noto Sans";
+  /* font-family: "SF Pro Display"; */
 }
 
 /* mobile view */
@@ -37,13 +38,23 @@
   .services-text {
     margin-left: 50px;
   }
+  /* .swp{
+    
+  } */
 }
 /* Media query for iPads and tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #services {
-    height: 87vh;
+    height: auto;
   }
   h1 {
     font-size: 2rem;
+  }
+  .swp{
+    font-size: 44px;
+  }
+  .service-text {
+    font-size: 12px;
+    font-family: "Noto Sans";
   }
 }

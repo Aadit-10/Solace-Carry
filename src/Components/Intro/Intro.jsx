@@ -47,7 +47,7 @@ const Intro = () => {
           {" "}
           {/**/}
           <div className="marching-font ">
-            <p className="solace">Solace Carry </p>
+            <p className="solace">SOLACE CARRY </p>
             <p className="packers-movers">Packers and Movers</p>
             <p className="making">MOVING DREAMS DELIVERING TRUST</p>
           </div>

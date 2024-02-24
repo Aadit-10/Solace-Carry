@@ -20,14 +20,12 @@
   /* object-fit: cover; */
   position: absolute;
 }
-.packers-movers {
-  font-size: 40px;
-  color: #494962; 
-  /* margin-top: -10px; */
-}
 
 .marching-font {
   font-family: "Marcher", sans-serif;
+  /* font-family: 'Protest Strike', sans-serif; */
+  /* font-family: "Oswald-Regular"; */
+
   padding-top: 100px;
   text-align: left;
   font-weight: bold;
@@ -38,12 +36,18 @@
   text-align: left;
 } */
 .solace {
-  font-size: 40px;
+  font-size: 50px;
   color: #494962;
 }
+.packers-movers {
+  font-size: 50px;
+  color: #494962; 
+  /* margin-top: -10px; */
+}
+
 .making {
-  color: white;
-  font-size: 58px;
+  color: #fff;
+  font-size: 40px;
 }
 @media only screen and (max-width: 576px) {
   .solace {
@@ -65,7 +69,7 @@
     background-image: url("../Images/mobile-bg.png");
   }
   .marching-font {
-    font-family: "Marcher", sans-serif;
+    /* font-family: "Marcher", sans-serif; */
     padding-top: 50px;
   }
 }

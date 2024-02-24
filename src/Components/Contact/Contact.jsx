@@ -212,11 +212,13 @@ export const Contact = () => {
                   variant="primary"
                   type="submit"
                   value="Send"
+                  
                   style={{
                     width: descriptionRef.current?.offsetWidth || "100%",
                     height: "70px",
                     fontSize: "40px", 
-                    color:'black',
+                    fontFamily: "SF Pro Display Bold",
+                    color:'#4E4949',
                     // backgroundImage: `url(${require('../Images/buttonbg.png')})`,
                     backgroundSize: "cover", 
                     backgroundColor: "#f2efef", 

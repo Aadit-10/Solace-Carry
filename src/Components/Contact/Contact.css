@@ -4,14 +4,16 @@
   margin-bottom: 20px;
   background-color: #6bd6b8;
   box-shadow: inset 450px 0px 500px 50px #126d55;
+  border-radius: 15px;
   /* backdrop-filter: blur(10px); */
   /* padding: 20px; */
-  border-radius: 15px;
   /* font-family: "SF Pro Display"; */
 }
 .book-text {
   font-size: 90px;
-  font-family: "SF Pro Display Bold";
+  /* font-family: "SF Pro Display Bold"; */
+  font-family: 'Protest Strike', sans-serif;
+
 }
 
 .place::placeholder {

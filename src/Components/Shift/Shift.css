@@ -13,7 +13,9 @@
   font-family: "SF Pro Display ";
 }
 .shift-text{
-  font-family: "SF Pro Display Bold";
+  /* font-family: "SF Pro Display Bold"; */
+  font-family: 'Protest Strike', sans-serif;
+
 }
 .shift-card-img {
   width: 306.5px;
